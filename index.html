@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap added -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+    <style>
+    @media only screen and (max-width: 480px) and (min-width: 0)
+{
+    .backimage { display:none; } // 12 px
+    .icon-9{ display:inline-block; }  // 9px
+}
+body{
+    background-image: url("images/gra.png");
+    background-size: cover;
+}
+div ul li{
+    font-size: 20px;
+    color:black;
+
+}
+#sty{
+    font-size: 20px;
+    background-color: transparent;
+    margin-right:5px;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+ 
+}
+.lin{
+    text-decoration: none!important;
+    color: black;
+}
+.lin:hover, #sty:hover{
+    background-color: #3485df;
+    color: white; 
+}
+.backimage{
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+#imgb{
+    /* border: 1px solid transparent;
+    outline: 5px solid #021b79; */
+    display: block;
+
+    box-shadow: 15px 20px 1px -1px black;
+    position: relative;
+    width:290px;
+}
+.stick{
+    animation-name: pro;
+    animation-duration:4s;
+    animate-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+@keyframes pro{
+    15%{ left:40%;}
+    45%{top:70%;}
+    100%{left:10%;}
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top " style="margin-top:16px;padding-right:60px;">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+    <button class="btn navbar-btn active" id="sty"><a href="#s" class="lin">Home</a></button>
+    <button class="btn navbar-btn" id="sty"><a href="#s" class="lin">About Me</a></button>
+    <button class="btn navbar-btn" id="sty"><a href="#sid" class="lin">Home</a></button>
+    <button class="btn navbar-btn" id="sty"><a href="#s" class="lin">Services</a></button>
+    <button class="btn navbar-btn" id="sty"><a href="#s" class="lin">Portfolio</a></button>
+    <button class="btn navbar-btn" id="sty"><a href="#s" class="lin">Contact</a></button>
+    </ul>
+
+  </div>
+    </nav>
+
+    <div>
+    <div class="backimage"> </div>
+    <div><img src="images/pro.jpg" alt="" id="imgb"style="position:relative;left:15vw;top:7vh;"></div>
+    </div>
+    <div class="stick" style="position:absolute; background-color:#3485df; height:20px;width:200px;left:25%;top:12%;"></div>
+  
+    <script></script>
+</body>
+
+</html>
